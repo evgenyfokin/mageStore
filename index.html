@@ -7,27 +7,31 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Quicksand:wght@700&display=swap"
+          rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-<header class="header">
-    <div class="container">
+<div class="header">
+    <div class="header__container">
         <div class="nav">
-            <ul class="nav__list">
-                <li class="logo">
-                    <img src="img/logo.png" alt="logo">
-                    <h3>SubMage</h3>
-                </li>
+            <div class="header__logo">
+                <img src="img/logo.png" alt="">
+                <h3>SubMage</h3>
+            </div>
+            <ul class="header__menu">
                 <li>Netflix</li>
                 <li>PlayStation</li>
                 <li>Adobe</li>
                 <li>Другое</li>
-                <li><img style="width: 73px" src="img/hearts.png" alt="hearts"></li>
             </ul>
+            <img class="header__hearts" src="img/hearts.png" alt="">
+            <div class="header__burger">
+                <img src="img/burger.png" alt="">
+            </div>
         </div>
     </div>
-</header>
-<script src="script.js"></script>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
