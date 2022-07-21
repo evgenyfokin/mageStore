@@ -5,11 +5,16 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.header{
+.header {
     padding: 64px 180px 64px 180px;
 }
 
-
+.header__container {
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .nav {
     display: flex;
@@ -21,12 +26,15 @@
     display: flex;
     align-items: center;
 }
+
 .header__logo img {
     width: 27px;
     margin-right: 6px;
-}.header__logo h3 {
-     font-size: 36px;
-     font-weight: 300;
+}
+
+.header__logo h3 {
+    font-size: 36px;
+    font-weight: 300;
 }
 
 .header__menu {
@@ -46,10 +54,73 @@
     display: none;
 }
 
-@media (max-width: 1100px) {
+.header__middle {
+    display: flex;
+    justify-content: space-between;
+}
 
-    .header{
+.header__middle img {
+    height: 18vw;
+}
+
+.header__middle-title {
+    left: 0;
+}
+
+.header__middle-wizard {
+    margin-right: 7vw;
+}
+
+.header__middle-title {
+    margin-top: 3vw;
+}
+
+.header__down {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 7vw;
+}
+
+.header__down-button {
+    display: flex;
+    align-items: flex-start;
+}
+
+.header__down-button button {
+    background-color: #EE5281;
+    padding: 12px 19px;
+    border-radius: 38px;
+    outline: none;
+    border: none;
+    margin-left: 7vw;
+}
+
+.header__down-button-title {
+    width: 117px;
+}
+
+.header__down-button-bullet{
+    width: 57px
+}
+
+.header__down-text {
+    width: 35vw;
+    text-align: right;
+    font-weight: 400;
+    font-size: 2vw;
+}
+
+@media (max-width: 1100px) {
+    .header {
         padding: 6vw 7vw 6vw 7vw;
+    }
+
+    .header__middle {
+        justify-content: center;
+    }
+
+    .header__middle-title {
+        margin-right: 35px;
     }
 }
 
@@ -57,23 +128,32 @@
     .header__menu {
         display: none;
     }
+
     .header__hearts {
         display: none;
     }
+
     .header__burger {
         display: block;
     }
+
+
+
 }
 
 @media (max-width: 350px) {
     .header__logo img {
         width: 24px;
 
-    }.header__logo h3 {
-         font-size: 28px;
-         font-weight: 300;
-     }
-     .header__burger img{
-         width: 11vw;
-     }
+    }
+
+    .header__logo h3 {
+        font-size: 28px;
+        font-weight: 300;
+    }
+
+    .header__burger img {
+        width: 11vw;
+    }
+
 }
